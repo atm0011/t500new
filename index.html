@@ -344,10 +344,10 @@ seconds <10 ? seconds = "0"+seconds : seconds;
 // var rels = days + "天" + hours + "时" + minutes + "分" + seconds + "秒";   
 // 第二种连接方法
 var rels = `${days}天${hours}时${minutes}分${seconds}秒`
-
+if(days=='00'&&hours=="00"){rels=`00天00时00分00秒`} 
 // 判断时间差是不是正数，就是截止时间是不是比现在的时间晚
-var mis = mistiming > 0? rels:"请输入正确的时间"
-return  mis
+// var mis = mistiming > 0? rels:"请输入正确的时间"
+return  rels;
 }  
 
 //用计时器去实现它
