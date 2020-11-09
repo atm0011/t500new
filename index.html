@@ -352,8 +352,8 @@ return  rels;
 //用计时器去实现它
 setInterval(function(){
 //把倒计时放在h1标签中
-day.innerHTML =  daojiShi("2020/11/27").split('天')[0]
-hour.innerHTML =  daojiShi("2020/11/27").split('时')[0].split('天')[1]
+day.innerHTML =  daojiShi("2020/11/27 23:59:59").split('天')[0]
+hour.innerHTML =  daojiShi("2020/11/27 23:59:59").split('时')[0].split('天')[1]
 },1000)//时间我们设置1000毫秒，也就是1秒钟
 </script>
 </body>
